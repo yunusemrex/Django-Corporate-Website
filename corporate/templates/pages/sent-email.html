@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+{% include 'components/header.html' %}
+
+
+{% include 'components/navbar.html' %}
+
+
+</div>
+</header><!-- End Header -->
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <ol>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li>Contact</li>
+      </ol>
+      <h2>Contact</h2>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+  <section class="inner-page">
+    <div class="container">
+
+        <h3>Email Sent!</h3>
+        <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_hoqqqwvt.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px; margin:0px auto;"  loop autoplay></lottie-player>
+
+
+
+      </p>
+    </div>
+  </section>
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+{% include 'components/footer.html' %}
+{% include 'components/arrow-up.html' %}
+
+
+
+
+</body>
+
+</html>
+{% endblock %}

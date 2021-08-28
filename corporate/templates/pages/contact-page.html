@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+{% include 'components/header.html' %}
+
+
+{% include 'components/navbar.html' %}
+
+
+</div>
+</header><!-- End Header -->
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <ol>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li>Contact</li>
+      </ol>
+      <h2>Contact</h2>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+  <section class="inner-page">
+    <div class="container">
+      <p>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input type="submit" value="Submit" />
+        </form>
+        
+        
+
+
+      </p>
+    </div>
+  </section>
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+{% include 'components/footer.html' %}
+{% include 'components/arrow-up.html' %}
+
+
+
+
+</body>
+
+</html>
+{% endblock %}

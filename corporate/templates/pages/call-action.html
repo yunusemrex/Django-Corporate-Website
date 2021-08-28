@@ -1,0 +1,18 @@
+ <!-- ======= Cta Section ======= -->
+ <section id="cta" class="cta">
+    <div class="container" data-aos="zoom-in">
+
+      <div class="row">
+          {% for action in actions %}
+        <div class="col-lg-9 text-center text-lg-left">
+          <h3>{{ action.call_action_title }}</h3>
+          <p>{{ action.call_action_text }}</p>
+        </div>
+        <div class="col-lg-3 cta-btn-container text-center">
+          <a class="cta-btn align-middle" href="#">Call To Action</a>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </section><!-- End Cta Section -->
