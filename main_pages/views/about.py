@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect
 from corporate.models.about import AboutDetail, AboutText
+from main_pages.models.main_pages import Pages
 
 
 def about(request):
-    atext = AboutText.objects.all()
+    about = Pages.objects.get(title='About')
     return render(request, 'pages/about.html', context={
-        'atext': atext
+        'about':about
     })

@@ -10,7 +10,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
-    {% include 'pages/hero.html'%}
+    {% include 'sections/hero.html'%}
 
   </section><!-- End Hero -->
 
@@ -51,10 +51,10 @@
       </div>
     </section><!-- End Cliens Section -->
 
-{% include 'pages/about.html' %} 
+{% include 'sections/about.html' %} 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg">
-{% include 'pages/why-us.html' %}
+{% include 'sections/why-us.html' %}
     </section><!-- End Why Us Section -->
 
     <!-- ======= Skills Section ======= -->
@@ -110,16 +110,16 @@
       </div>
     </section><!-- End Skills Section -->
 
-   {% include 'pages/services.html' %}
+   {% include 'sections/services.html' %}
 
-   {% include 'pages/call-action.html' %}
+   {% include 'sections/call-action.html' %}
 
    
 
-  {% include 'pages/team.html' %}
-  {% include 'pages/pricing.html' %}
+  {% include 'sections/team.html' %}
+  {% include 'sections/pricing.html' %}
 
-  {% include 'pages/f-asks.html'%}
+  {% include 'sections/f-asks.html'%}
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -131,5 +131,5 @@
 
   </main><!-- End #main -->
 
-
+{% include 'components/footer.html' %}
 {% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'sections/inner-page.html '%}
+{% block inner %}
+
+<div class="container">
+    <h2>{{ team.title }}</h2>
+<p>
+    <strong> {{ team.content|safe}}</strong>
+</p>
+</div>
+
+{% endblock %}

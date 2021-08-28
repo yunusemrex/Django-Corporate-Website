@@ -21,7 +21,7 @@ def index(request):
     members = TeamMembers.objects.all()
     services = Services.objects.all()
     actions = CallAction.objects.all()
-    adetail_heading = AboutDetail.objects.all()
+    adetail_heading = AboutDetail.objects.all()[:3]
     atext = AboutText.objects.all()
     headers = HeroSection.objects.all()
     why_us = WhyUs.objects.all()
@@ -31,7 +31,7 @@ def index(request):
 
     # paginator = Paginator(members, 4)
 
-    return render(request, 'pages/index.html', context={
+    return render(request, 'sections/index.html', context={
         'asks': asks,
         'plans': plans,
         'members': members,
@@ -52,6 +52,9 @@ def index(request):
 
 
 def detail(request):
-    return render(request, 'pages/portfolio-details.html', context={
+    return render(request, 'sections/portfolio-details.html', context={
 
     })
+
+def inner(request):
+    return render(request, 'sections/inner-page.html', context={})

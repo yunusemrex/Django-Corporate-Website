@@ -1,0 +1,11 @@
+{% extends 'sections/inner-page.html '%}
+{% block inner %}
+
+<div class="container">
+    <h2>{{ policy.title }}</h2>
+<p>
+    <strong> {{ policy.content|safe}}</strong>
+</p>
+</div>
+
+{% endblock %}

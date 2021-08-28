@@ -43,10 +43,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corporate',
+    'main_pages',
     #third party app
     'ckeditor',
     'crispy_forms',
-    'environ',
+    'environ'
 ]
 
 MIDDLEWARE = [
