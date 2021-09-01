@@ -9,6 +9,7 @@ django-environ = "*"
 django-ckeditor = "*"
 django-crispy-forms = "*"
 pillow = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
