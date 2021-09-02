@@ -1,4 +1,4 @@
-from base import *
+from .base import *
 
 
 ALLOWED_HOSTS = ['digitalkey.tech', '127.0.0.1', '46.31.79.37']

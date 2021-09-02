@@ -1,5 +1,5 @@
 from config.settings.production import DATABASES
-from base import *
+from .base import *
 
 DEBUG = True
 
