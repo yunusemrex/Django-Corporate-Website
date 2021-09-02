@@ -37,7 +37,7 @@ DATABASES = {
         'USER':  env('DB_USER'),
         'PASSWORD':  env('DB_PASSWORD'),
         'HOST': 'localhost',
-        'POST': '5432',
+        'PORT': '5432',
     }
 }
 
